@@ -1,0 +1,169 @@
+@import 'mixins';
+
+
+
+
+
+.side-bar {
+    position: fixed;
+    // top: 0;
+    // left: 0;
+    // padding: 0.5rem;
+    width: 0px;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow-x: hidden;
+    // overflow-wrap: break-word;
+    white-space: nowrap;
+    background: white;
+    padding: 0.2rem;
+    z-index: 4;
+    display: none;
+
+    &.open{
+        display: inline-block;
+        width: 300px;
+    }
+
+    &::-webkit-scrollbar{
+        width: 0.3vw;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: #eee;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: gray;
+        border-radius: 40px;
+    }
+
+    input[type="search"]{
+        width: 100%;
+        margin: 0 auto;
+        // height: 50px;
+        padding: 1rem;
+        text-indent:5px;
+        outline: none;
+        border: none;
+
+        
+        &:focus{
+            box-shadow: rgba(55, 255, 5, 0.2) 0px 7px 29px 0px;
+        }
+
+    }
+
+    ::placeholder{
+        font-size: 15px;
+        color: gray;
+    
+    }
+
+    .logo{
+        width: 270px;
+        margin: 15px auto;
+        position: relative;
+        // border-top: 0.1px solid black;
+        img{
+            width: 100%;
+        }
+    }
+
+
+    &_nav{
+        width:0px;
+        padding: 1rem;
+        margin: 0 auto;
+
+
+        &.open{
+            width: 300px;
+        }
+
+        .office{
+            @include list-style;
+        }
+
+        .api{
+            @include list-style;
+        }
+        .banks{
+            @include list-style;
+        }
+        .efris{
+            @include list-style;
+        }
+        .exigo{
+            @include list-style;
+        }
+        .commissions{
+            @include list-style;
+        }
+        .mcommerce{
+            @include list-style;
+        }
+        .dev{
+            @include list-style;
+        }
+        .exi-mcommerce{
+            @include list-style;
+        }
+        .montend{
+            @include list-style;
+        }
+        .vpn{
+            @include list-style;
+        }
+        .txt{
+            @include list-style;
+        }
+        .ssrs{
+            @include list-style;
+        }
+        .service{
+            @include list-style;
+        }
+        .report{
+            @include list-style;
+        }
+        .payment{
+            @include list-style;
+        }
+        .neolife{
+            @include list-style;
+        }
+        .neop{
+            @include list-style;
+        }
+        .mpessa{
+            @include list-style;
+        }
+        .eloquent{
+            @include list-style;
+        }
+        .checks{
+            @include list-style;
+        }
+        .chatbox{
+            @include list-style;
+        }
+        .FAQ-Exigo{
+            @include list-style;
+        }
+        .FAQ-banks{
+            @include list-style;
+        }
+        .FAQ-changing{
+            @include list-style;
+        }
+        .FAQ-payment{
+            @include list-style;
+        }
+        .FAQ-setting{
+            @include list-style;
+        }
+
+        
+    }
+   
+    
+}

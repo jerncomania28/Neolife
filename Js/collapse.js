@@ -1,0 +1,27 @@
+
+        const btnCollapse = document.querySelectorAll('.collapse');
+
+        btnCollapse.forEach(item => console.log(item.addEventListener('click', toggleOptions)));
+
+
+        let showOptions = false;
+
+        function toggleOptions() {
+
+            const name = this.parentNode.className;
+
+            const options = document.querySelector(`.${name}> .options`);
+
+            if (!showOptions) {
+
+                options.classList.add('options_collapse');
+               
+                showOptions= true;
+            }else{
+                options.classList.remove('options_collapse');
+
+                showOptions = false;
+            }
+
+        }
+        

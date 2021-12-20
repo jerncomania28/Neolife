@@ -1,0 +1,75 @@
+
+
+@mixin list-style{
+    // width: 100%;
+            margin: 0px 0px 20px 5px;
+            &-sub{
+                list-style-type: none;
+                padding: 5px 0px 0px 20px ;
+                // padding-left: 20px;
+                
+                font-size: 13px;
+
+                .options_collapse{
+                    display: none;
+                }
+
+                .collapse{
+                    margin: 20px 0px;
+                    font-weight: 500px;
+                    line-height: 1.5em;
+                    letter-spacing: 0.1em;
+                    text-decoration: none;
+                }
+
+                .options{
+                    padding-left: 25px;
+                    list-style-type:'-';
+                    margin-top: 15px;
+                    li{
+                        margin: 10px 0px;
+                        line-height: 1.5em;
+                        overflow-wrap: break-word;
+                        padding: 0.5rem;
+                        border-right: 2px yellowgreen;
+                        // background: wheat;
+                        a{
+                            text-decoration: none;
+                            padding: 0.5rem;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+
+
+                            &:active{
+                                color: #42b983;
+                                position: relative;
+                                
+
+                                &::after{
+                                    content: "";
+                                    position: absolute;
+                                    top: 0px;
+                                    right:0px;
+                                    width: 2px;
+                                    height: 100%;
+                                    background:#42b983;                                    
+                                    
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
+            p{
+                width: 300px;
+                // padding: -20px;
+                font-size: 15px;
+                font-weight: bolder;
+                margin-bottom: 15px;
+                // overflow-wrap: break-word;
+            }
+}
