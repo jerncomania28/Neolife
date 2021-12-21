@@ -18,6 +18,86 @@
         .center{
             width: 80%;
             margin:auto;
+            font-size: 14px;
+            font-weight: 400px;
+
+            h1{
+              margin: 3rem 2rem 2rem 0rem;
+              font-size: 25px;
+              color: #34495e;
+            }
+
+            div{
+                margin: 2rem 2rem 2rem 0rem;
+                h3{
+                    margin: 2rem 2rem 2rem 0rem;
+                    letter-spacing: 0.5em;
+                    color: #34495e;
+                }
+                p{
+                    line-height: 20px;
+                }
+
+                ul{
+                    // list-style: none;
+
+                    li{
+                        margin-bottom: 20px;
+                        padding-left: 15px;
+                        color: #34495e;
+                    }
+                }
+            }
+            .introduction{
+
+                p{
+                    border-left: 4px solid #42b983;
+                    padding-left: 15px;
+                    color: #858585;
+                }
+            }
+
+            .features{
+                margin: -20px;
+                margin-top: 20px;
+                ul{
+                    list-style: none;
+                    margin: 0;
+
+                    li{
+                        color: #34495e;
+                        h4{
+                            width:100%;
+                            letter-spacing: 0.2em;
+                            margin: 1.5rem 0rem 1.5rem 0rem;
+                            padding-left: 20px;
+                            border-left: 4px solid #42b983;
+                            color: #858585;
+                            // padding: 0.5rem 0rem 0.5rem 1rem ;
+                        }
+                    }
+                }
+            }
+
+            .faq{
+                margin: 3rem 0px 0px -2px;
+
+                h3{
+                    margin: 1rem 1rem 1rem 0;
+                }
+                .footer{
+                    margin: 1.5rem 0rem 1.5rem 0rem;
+                    border-left: 4px solid #42b983;
+                    padding-left: 15px;
+                    color: #858585;
+                    p{
+                        margin: 1rem;
+                        border-left: 4px solid #42b983;
+                        padding-left: 15px;
+                        color: #858585;
+                    }
+                }
+            }
         }
 
         &.open{

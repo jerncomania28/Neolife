@@ -15,7 +15,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  overflow-x: scroll;
 }
 
 .side-bar {
@@ -2022,6 +2021,85 @@ nav .menu-btn_burger::after.open {
 .container_inner .center {
   width: 80%;
   margin: auto;
+  font-size: 14px;
+  font-weight: 400px;
+}
+
+.container_inner .center h1 {
+  margin: 3rem 2rem 2rem 0rem;
+  font-size: 25px;
+  color: #34495e;
+}
+
+.container_inner .center div {
+  margin: 2rem 2rem 2rem 0rem;
+}
+
+.container_inner .center div h3 {
+  margin: 2rem 2rem 2rem 0rem;
+  letter-spacing: 0.5em;
+  color: #34495e;
+}
+
+.container_inner .center div p {
+  line-height: 20px;
+}
+
+.container_inner .center div ul li {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  color: #34495e;
+}
+
+.container_inner .center .introduction p {
+  border-left: 4px solid #42b983;
+  padding-left: 15px;
+  color: #858585;
+}
+
+.container_inner .center .features {
+  margin: -20px;
+  margin-top: 20px;
+}
+
+.container_inner .center .features ul {
+  list-style: none;
+  margin: 0;
+}
+
+.container_inner .center .features ul li {
+  color: #34495e;
+}
+
+.container_inner .center .features ul li h4 {
+  width: 100%;
+  letter-spacing: 0.2em;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+  padding-left: 20px;
+  border-left: 4px solid #42b983;
+  color: #858585;
+}
+
+.container_inner .center .faq {
+  margin: 3rem 0px 0px -2px;
+}
+
+.container_inner .center .faq h3 {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.container_inner .center .faq .footer {
+  margin: 1.5rem 0rem 1.5rem 0rem;
+  border-left: 4px solid #42b983;
+  padding-left: 15px;
+  color: #858585;
+}
+
+.container_inner .center .faq .footer p {
+  margin: 1rem;
+  border-left: 4px solid #42b983;
+  padding-left: 15px;
+  color: #858585;
 }
 
 .container_inner.open {
