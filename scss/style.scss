@@ -106,3 +106,22 @@
     }
 
 }
+
+
+
+
+@media screen and (max-width:500px){
+
+    .container{
+        // background: red;
+
+        &_inner{
+
+            .center{
+                font-size: 10px;
+            }
+
+        }
+    }
+}
+
