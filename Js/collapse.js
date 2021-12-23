@@ -12,6 +12,10 @@
 
             const options = document.querySelector(`.${name}> .options`);
 
+
+
+            options.classList.toggle('option_collapse');
+
             if (!showOptions) {
 
                 options.classList.add('options_collapse');

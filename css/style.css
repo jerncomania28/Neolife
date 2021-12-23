@@ -2003,6 +2003,120 @@ nav .menu-btn_burger::after.open {
           transform: rotate(45deg), translate(8px, -7px);
 }
 
+.central {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, right top, left bottom, from(#b3cfff), to(#ffe7b3));
+  background: linear-gradient(to left bottom, #b3cfff 0%, #ffe7b3 100%);
+  overflow: hidden;
+}
+
+.central .intro {
+  margin: 1rem;
+  color: #34495e;
+}
+
+.central .intro h3 {
+  margin: 1rem;
+  font-size: 40px;
+}
+
+.central .intro p {
+  margin: 1rem;
+  font-size: 24px;
+}
+
+.central .validation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.central .validation small {
+  position: absolute;
+  left: 1.2rem;
+  top: 3.5rem;
+  color: red;
+  font-weight: bolder;
+  font-family: monospace;
+}
+
+.central .validation #mail {
+  padding: 1rem;
+  width: 65vw;
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+.central .validation i {
+  position: absolute;
+  top: 1rem;
+  right: 200px;
+  visibility: hidden;
+}
+
+.central .validation #button {
+  padding: 1rem;
+  border-radius: 40px;
+  background: green;
+  outline: none;
+  border: none;
+  margin: 20px;
+}
+
+.central .validation #button a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  font-family: monospace;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.central .validation .success {
+  color: green;
+  visibility: visible;
+}
+
+.central .validation .fail {
+  color: red;
+  border: 2px solid red;
+}
+
+@media screen and (max-width: 600px) {
+  .central .intro {
+    text-align: center;
+  }
+  .central .intro h3 {
+    font-size: 25px;
+  }
+  .central .intro p {
+    font-size: 20px;
+  }
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;

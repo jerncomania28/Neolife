@@ -1,0 +1,109 @@
+
+
+.central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    background :linear-gradient(to left bottom, hsl(218, 100%, 85%) 0%,hsl(41, 100%, 85%) 100%);
+    overflow: hidden;
+
+    .intro{
+
+        margin: 1rem;
+        color: #34495e;
+
+        h3{
+            margin: 1rem;
+            font-size: 40px;
+        }
+        p{
+            margin: 1rem;
+            font-size: 24px;
+        }
+    }
+
+    .validation{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        // width: 600px;
+        position: relative;
+
+        small{
+            position: absolute;
+            left: 1.2rem;
+            top: 3.5rem;
+            color: red;
+            font-weight: bolder;
+            font-family: monospace;
+        }
+
+        #mail{
+            padding: 1rem;
+            width: 65vw;
+            max-width: 400px;
+            margin-left: 20px;
+        }
+        i{
+            position: absolute;
+            top: 1rem;
+            right: 200px;
+            visibility: hidden;
+        }
+        #button{
+        
+           padding: 1rem;
+           border-radius: 40px;
+           background: green;
+           outline: none;
+           border: none;
+           margin: 20px;
+           a{
+
+               padding: 1rem;
+               text-decoration: none;
+               color: white;
+               font-family: monospace;
+               font-size: 15px;
+               cursor: pointer;
+
+
+           }
+        }
+
+        .success{
+            color: green;
+            visibility: visible;
+        }
+
+        .fail{
+            color: red;
+            // outline: red;
+            border: 2px solid red;
+        }
+
+
+
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .central{
+        // background: red;
+        .intro{
+            text-align: center;
+
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
