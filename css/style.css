@@ -2056,8 +2056,8 @@ nav .menu-btn_burger::after.open {
 
 .central .validation small {
   position: absolute;
-  left: 1.2rem;
-  top: 3.5rem;
+  left: 1.3rem;
+  top: 5rem;
   color: red;
   font-weight: bolder;
   font-family: monospace;
@@ -2114,6 +2114,13 @@ nav .menu-btn_burger::after.open {
   }
   .central .intro p {
     font-size: 20px;
+  }
+  .central .validation small {
+    top: 3.5rem;
+    left: 4.5rem;
+  }
+  .central .validation #button {
+    margin-top: 40px;
   }
 }
 
