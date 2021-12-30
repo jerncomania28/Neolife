@@ -2095,11 +2095,6 @@ nav .menu-btn_burger::after.open {
   cursor: pointer;
 }
 
-.central .validation .success {
-  color: green;
-  visibility: visible;
-}
-
 .central .validation .fail {
   color: red;
   border: 2px solid red;
@@ -2186,6 +2181,20 @@ nav .menu-btn_burger::after.open {
 .container_inner .center .features ul {
   list-style: none;
   margin: 0;
+}
+
+.container_inner .center .features ul .footer {
+  margin: 1.5rem 0rem 1.5rem 0rem;
+  border-left: 4px solid #42b983;
+  padding-left: 5px;
+  color: #858585;
+}
+
+.container_inner .center .features ul .footer p {
+  margin: 1rem;
+  border-left: 4px solid #42b983;
+  padding-left: 10px;
+  color: #858585;
 }
 
 .container_inner .center .features ul li {

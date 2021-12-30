@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>commissions.neolifeafrica.info</title>
     <link rel="icon" href="./img/logo-ico.ico">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             <input type="search" name="search-query" class="search-input" placeholder="Type search key ">
 
             <div class="logo">
-              <a href="./index.html"><img src="./img/neolife_logo.png" alt="logo"> </a>
+                <a href="./index.html"><img src="./img/neolife_logo.png" alt="logo"> </a>
             </div>
 
             <div class="side-bar_nav">
@@ -122,13 +122,13 @@
                                 <a href="./efris.html#introduction ">Introduction</a>
                             </li>
                             <li>
-                                <a href="./efris.html#uses ">Uses</a>
+                                <a href="./efris.html#uses">Uses</a>
                             </li>
                             <li>
                                 <a href="./efris.html#features ">Features</a>
                             </li>
                             <li>
-                                <a href="./efris.html#faq ">FAQ</a>
+                                <a href="./efris.html#faq">FAQ</a>
                             </li>
                         </ul>
 
@@ -743,15 +743,19 @@
 
             <div class="center">
 
-                <h1>office.neolifeafrica.info</h1>
+                <h1>efris.neolifeafrica.info</h1>
 
                 <div class="introduction">
                     <h3 id="introduction"> Introduction</h3>
 
                     <p>
-                        The office.neolifeafrica.info is a web solution that helps staff manage daily operations from a
-                        single pane of glass. This solutions introduces a user interface enabling a seamless access to
-                        custom solutions built to support the Exigo platform.
+                        commissions.neolifeafrica.info in it's simplest form is a system built to reward distributors
+                        within a business period. This reward is a culmination of sales volume bonus, leadership
+                        development bonus, network development bonus, consistency bonus and rebates. These various
+                        incentives/bonuses that are paid to distributors are generated on Exigo and passed to this
+                        system which does some deductions based on the local country regulatory policies to generate the
+                        final payouts that are sent to distributors. On a top level there are various functionality
+                        built into this system as listed under the uses below
                     </p>
                 </div>
 
@@ -759,19 +763,12 @@
 
                     <h3 id="uses">Uses</h3>
                     <ul>
-                        <li>Deposits</li>
-                        <li>Web Payments</li>
-                        <li>Create Credit Notes</li>
-                        <li>Account Number Lookup</li>
-                        <li>Convention (ZA)</li>
-                        <li>SMS Monitor</li>
-                        <li>Bulk SMS</li>
-                        <li>POS Invoice</li>
-                        <li>Subscriptions</li>
-                        <li>Reverse Commision Points</li>
-                        <li>Auto Print </li>
-                        <li>Distributors Report</li>
-                        <li>Logout</li>
+                        <li> Settings </li>
+                        <li>Admin Fee</li>
+                        <li>Adjustments</li>
+                        <li>Commissions Run</li>
+                        <li>Dashboard Overview</li>
+
                     </ul>
 
                 </div>
@@ -780,105 +777,104 @@
                     <h3 id="features">Features</h3>
 
                     <ul>
-                        <li class="deposits">
-                            <h4>Deposits</h4>
+                        <li class="footer">
+
                             <p>
-                                This feature is available as a pointer to the web reports on the deposits table Reports
-                                are
-                                organised into folders. All related reports are put in the same folder . The following
-                                is
-                                the list of folders available
+                                Settings This is where we set up configurations such as the business period for running
+                                the commission, disabling and enabling sms pushout for successful commissions and
+                                finally enabling/disabling the process of commission upload.
                             </p>
                         </li>
 
-                        <li class="web">
-                            <h4>web Payments</h4>
+                        <li class="footer">
+
                             <p>
-                                This feature is available as pointer to the web payments reports.
+                                Admin Fee This is another feature that enables us pass certain adminstrative fees to
+                                distributors based on their level and countries. We always look into the comAdminfees
+                                table that has an already defined values for this.
                             </p>
                         </li>
 
-                        <li class="create">
-                            <h4>Create Credit Notes</h4>
+                        <li class="footer">
+
                             <p>
-                                This is a feature on office.neolifeafrica.info that allows neolife staff to create a
-                                credit
-                                note for distributors on payment. The details captured in this process includes the
-                                neolife
-                                id , customer phone , amount , source , deposit description and any other additional
-                                details
-                                .
+                                Adjustments This is where all the necesssary adjustments that are to be made on the
+                                commissions are applied. These adjustments could be money we owe the distributor or any
+                                deduction to be made to balance accounts accross board. Adjustments could be added as a
+                                bulk upload by uploading csv files or single entry. The fields needed to create an
+                                adjustment are the business period, NeolifeID and Description .
                             </p>
                         </li>
 
-                        <li class="account">
-                            <h4>Account Number Lookup</h4>
+                        <li class="footer">
+
                             <p>
-                                This feature allows Neolife staff to look up account names of distributors to verify the
-                                authenticity of their account details. This is done using the account number and bank
-                                name
-                                of the distributor .
+                                Dashboard Overview This is a single pane of glass window that shows summary of progress
+                                of commission run so far. These includes total rows in volumes, total rows processed
+                                from volumes, total adjustments, status, reports upload progress and upload points
+                                status.
                             </p>
+                        </li>
+                        <li class="footer">
+                            Commision Run This is where the actual commisions are ran and the various payadvice are
+                                generated for the distributor. There are about eleven sub-proceess that needs to happen
+                                to achieve this commision run. They are listed below 
+
+                            <p>
+                                Run Commissions Summaries : Extracts commission details from Exigo and insert them into extended table</p>
+                        </li>
+                        <li class="footer">
+
+                            <p>
+                                Run Commissions Volume Summaries : Generate consistency bonus and extract commission details from commisions summaries and insert into the extended table
+                                </p>
+                        </li>
+                        <li class="footer">
+
+                            <p>
+                                Copy Adjustments : copy out created adjustments into payment details </p>
+                        </li>
+                        <li class="footer">
+
+                            <p>
+                                Create Payout Details : Extract Bonus, retail and member profits, VAT , consistency bonus, withholding tax, admin fees, exchange costs and medical aids. </p>
+                        </li>
+                        <li class="footer">
+
+                            <p>
+                                Extract Bank Details : Extract customers Bank account number and bank name from Exigo custom reports </p>
+                        </li>
+                        <li class="footer">
+
+                            <p>Approve Final Payouts : Run Reports and verify final payouts then generate payout files </p>
+                        </li>
+                        <li class="footer">
+
+                            <p>
+                                Create Commissions Points: Create commissions points for non Direct Deposits </p>
+                        </li>
+                        <li class="footer">
+
+                            <p>
+                                Populate SSRS Reports : Populate SSRS reports and background tasks </p>
+                        </li>
+                        <li class="footer">
+
+                            <p>
+                                Merge Business Profile : Merge all Business Profile SD and above </p>
+                        </li>
+                        <li class="footer">
+
+                            <p>
+                                Populate Commisions Notification SMS : Populate commissions Notification SmS into the customservicescontext.smsmessages table. </p>
+                        </li>
+                        <li class="footer">
+
+                            <p>
+                                Create and Upload External Reports : Create and upload all external Reports to Amazon s3 </p>
                         </li>
 
-                        <li class="convention">
-                            <h4>Convention (ZA)</h4>
-                            <p>This feature was created for a convention in 2019 to enable pull ticket for orders </p>
-                        </li>
 
-                        <li class="sms">
-                            <h4>SMS Monitor</h4>
-                            <p>
-                                This feature enables real-time monitoring of sms sent . it aggregates these records by
-                                country , sms sent today , pending and total sms
-                            </p>
-                        </li>
-                        <li class="bulk">
-                            <h4>Bulk SMS</h4>
-                            <p>This feature enables staff to format and send bulk sms to neolife distributors</p>
-                        </li>
-                        <li class="POS">
-                            <h4>POS Invoice</h4>
-                            <p>
-                                This feature allows seamless printing of invoice using the order id of distributors
-                            </p>
-                        </li>
-
-                        <li class="sub">
-                            <h4>Subscriptions</h4>
-                            <p>
-                                This feature enables seamless creation of new subscriptions
-                            </p>
-                        </li>
-                        <li class="reverse ">
-                            <h4>Reverse Commision Points</h4>
-                            <p>
-                                This is used to reverse commission points for neolife distributors
-                            </p>
-                        </li>
-                        <li class="auto">
-                            <h4>Auto Print </h4>
-                            <p>
-                                This feature enables you to automatically assign an email to receive an invoice that
-                                will be
-                                automatically printed .
-                            </p>
-                        </li>
-
-                        <li class="distributors">
-                            <h4>Distributors Report</h4>
-                            <p>
-                                This features enables staff view distributors report using specific neolife id and
-                                period
-                            </p>
-                        </li>
-
-                        <li class="logout">
-                            <h4>Logout</h4>
-                            <p>
-                                This enables staff to logout once they are done with their operations.
-                            </p>
-                        </li>
                     </ul>
                 </div>
 
@@ -887,24 +883,10 @@
                         FAQ
                     </h3>
                     <div class="footer">
-                        what happpens if I'm a new user on office.neolifeafrica.info? 
+                        how do i access commissions.neolifeafrica.info on github ?
 
                         <p>
-                            i have to provide my login credentials to login or request for one from the IT unit
-                        </p>
-                    </div>
-
-                    <div class="footer">
-                        where can i find this project on github ? <br>
-
-                        <p>
-                            visit <a href="#">Project</a>
-                        </p>
-                    </div>
-                    <div class="footer">
-                        what tech stack powers this project ? <br>
-                        <p>
-                            Vue, CSS , Javascript and other
+                            Visit <a href="#">Project</a> Who has access to this solutuions ? IT Directors and Developers What are the various tech stacks of this system ? C#, Cobol and HTML
                         </p>
                     </div>
                 </div>
